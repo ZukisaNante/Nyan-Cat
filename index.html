@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="container bg-background.png">
+    <p id="intro"></p>
     <script>
       /*section of document that is not interpreted 
       as markup is referred to as character data or CDATA.
@@ -16,6 +17,8 @@
       /* <!^[CDATA[ */
       document.open();
       document.write("<h1>" + document.title + "</h1>");
+      document.getElementById("intro").innerHTML = 
+      "Here we'll demonstrate how to manipulate  DOM objects!";
       document.close;
      /* ]]> */
     </script>
