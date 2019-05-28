@@ -1,1 +1,27 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nyan Cat</title>
+</head>
+<body>
+  <div class="container bg-background.png">
+    <script>
+      /*section of document that is not interpreted 
+      as markup is referred to as character data or CDATA.
+      The script would be validated successfully because the validator 
+      would ignore the script section and not attempt to interpret the text.*/
+      /* <!^[CDATA[ */
+      document.open();
+      document.write("<h1>" + document.title + "</h1>");
+      document.close;
+     /* ]]> */
+    </script>
+  <div class="wrapper">
+    <button type="button" onclick="rain">Nyan Cat</button>
+  </div>
+</div>
+</body>
+</html>
