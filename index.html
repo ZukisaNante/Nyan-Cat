@@ -5,10 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nyan Cat</title>
-  <link rel="stylesheet" href="css/main.css" class="href">
+  <!--<link rel="stylesheet" href="css/main.css" class="href">-->
+  <style>
+    html{height: 100%;}
+body{background: #0D343A;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(13,52,58,1)), to(#000000));
+    background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(0,0,0,1) 100%);
+    overflow: hidden;
+}
+.drop{
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(13,52,58,1)), to(255,255,255,0.6));
+    background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,0.6) 100%);
+    overflow: hidden;
+    width: 1px;
+    height: 89px;
+    position: absolute;
+    bottom: 200px;
+    -webkit-animation: fall .63s linear infinite;
+    -moz-animation: fall .63s linear infinite;
+}
+@-webkit-keyframes fall{
+    to{margin-top: 900px;}
+}
+
+@-moz-keyframes fall{
+    to{margin-top: 900px;}
+}
+
+
+
+  </style>
 </head>
-<body>
+<body onload="createRain();">
   <div class="container">
+    <section class="rain"></section>
     <!--on top of the h1 and that is not correct --><p id="intro"></p>
     <script>
       /*section of document that is not interpreted 
@@ -23,14 +53,9 @@
       document.close;
      /* ]]> */
     </script>
-  <div class="wrapper">
-    <button class="btn" type="button" onclick="rain">Nyan Cat</button>
-  </div>
-  <div class="cat">
-    
-  </div>
-</div>
+  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="main.js" ></script>
 </body>
 </html>
