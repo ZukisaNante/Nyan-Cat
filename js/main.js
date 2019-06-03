@@ -3,7 +3,7 @@ function myMove() {
   var pos = 0;
   var id = setInterval(frame, 10);
   function frame() {
-  if (pos == 350) {
+  if (pos == 1000) {
   clearInterval(id);
   } else {
   pos++; 
@@ -12,3 +12,14 @@ function myMove() {
 }
 }
 }
+
+
+// image show/hide
+/*function myMove() {
+  var x = document.getElementById("myAnimation") ;
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'hidden';
+  }
+}*/
