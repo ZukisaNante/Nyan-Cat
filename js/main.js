@@ -11,8 +11,7 @@ function myMove() {
   elem.style.left = pos + 'px'; 
 }
 }
-}
-function init(){
+//function init(){
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
   var w = canvas.width;
@@ -48,4 +47,6 @@ function snow(){
 }
 setInterval(snowfall, 20);
 }
-window.onload = init;
+
+
+//}
